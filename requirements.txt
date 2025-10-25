@@ -1,0 +1,37 @@
+# ===============================
+# GPU Acceleration Demo
+# Fundamentals of Accelerated Computing with Python
+# Author: Cyril Ofori Kupualor
+# ===============================
+
+# Core scientific computing libraries
+numpy==1.26.4        # Numerical computations and matrix operations
+numba==0.60.0        # JIT compiler with CUDA support for GPU acceleration
+
+# Optional visualization and notebook tools
+matplotlib==3.9.2    # (Optional) Plotting and benchmark visualization
+notebook==7.2.1      # (Optional) Jupyter Notebook support for demos
+
+# Developer utilities
+tqdm==4.66.4         # (Optional) Progress bar for benchmarking loops
+🧩 Usage Instructions
+Once this file is saved in your project root, anyone (including you) can set up the environment by running:
+
+bash
+Copy code
+pip install -r requirements.txt
+If you’re creating a clean environment for it (recommended):
+
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+pip install -r requirements.txt
+💡 Notes
+The versions are stable across Python 3.9–3.12.
+
+tqdm is optional but helpful if you add benchmarking loops later.
+
+If your machine has CUDA Toolkit installed, numba will automatically detect it and enable GPU kernels.
